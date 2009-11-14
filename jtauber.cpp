@@ -1,6 +1,6 @@
+#include <cmath>
 #include <fstream>
 #include <iostream>
-#include <cmath>
 #include <sstream>
 
 #define n 8
