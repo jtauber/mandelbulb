@@ -14,3 +14,9 @@ Cross-Section
 Slice 21 of a 8th-power Mandelbulb.
 
 .. image:: http://github.com/jtauber/mandelbulb/raw/master/mandel8_21.png
+
+
+Height Field
+------------
+
+.. image:: http://github.com/jtauber/mandelbulb/raw/master/mandel8_heightfield.png
