@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
     for (int i = 0; i < 100; i++) {
         std::cout << "layer " << i << std::endl;
         std::ofstream f;
-        f.open(("madel8_" + int_to_string(i) + ".values").c_str());
+        f.open(("mandel8_" + int_to_string(i) + ".values").c_str());
         for (int xx = 0; xx < w; xx++) {
             for (int yy = 0; yy < h; yy++) {
                 float x = 4.0 * (xx - (w / 2.0)) / w;
