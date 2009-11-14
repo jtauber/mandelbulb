@@ -1,7 +1,7 @@
 from math import sqrt, atan2, cos, sin
 
 
-int mandel(float x0, float y0, float z0):
+int def mandel(float x0, float y0, float z0):
     float x = 0.0
     float y = 0.0
     float z = 0.0
@@ -19,7 +19,7 @@ int mandel(float x0, float y0, float z0):
             return 256 - (i * 4)
     return 0
  
-int main(list<str> args):
+int def main(list<str> args):
     int h = int(args[1])
     int w = h
     
