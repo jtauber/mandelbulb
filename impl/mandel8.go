@@ -1,7 +1,3 @@
-/*
-from math import sqrt, atan2, cos, sin
-*/
-
 package main
 
 import "math"
