@@ -1,0 +1,37 @@
+from math import sqrt, atan2, cos, sin
+
+
+int mandel(float x0, float y0, float z0):
+    float x = 0.0
+    float y = 0.0
+    float z = 0.0
+    
+    for i in xrange(32):
+        float r = sqrt(x*x + y*y + z*z)
+        float theta = atan2(sqrt(x*x + y*y), z)
+        float phi = atan2(y, x)
+        
+        x = r ** n * sin(theta * n) * cos(phi * n) + x0
+        y = r ** n * sin(theta * n) * sin(phi * n) + y0
+        z = r ** n * cos(theta * n)
+        
+        if x*x + y*y + z*z > 2:
+            return 256 - (i * 4)
+    return 0
+ 
+int main(list<str> args):
+    int h = int(args[1])
+    int w = h
+    
+    for i in xrange(100):
+        print("layer %s" % i)
+        
+        file f = open("mandel8_%s.values" % i)
+        
+        for xx in xrange(w):
+            for yy in xrange(h):
+                float x = 4.0 * (xx - (w / 2.0)) / w
+                float y = 4.0 * (yy - (h / 2.0)) / h
+                float z = i / 50.0
+                f.write("%d\n" % mandel(x, y, z))
+        f.close()
