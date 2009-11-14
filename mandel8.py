@@ -51,10 +51,10 @@ def mandel(x0, y0, z0):
     else:
         return 0
 
-h = 600
-w = 600
+h = 400
+w = 400
 
-for layer in [21]:
+for layer in range(55):
     print "layer %02d" % layer
     
     def mandelbrot_function(xx, yy):
@@ -64,4 +64,4 @@ for layer in [21]:
         m = mandel(x, y, z)
         return (m,m,m)
     
-    write_png("mandel8_%02d.png" % layer, w, h, mandelbrot_function)
+    write_png("slices/mandel8_%02d.png" % layer, w, h, mandelbrot_function)
