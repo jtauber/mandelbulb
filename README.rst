@@ -2,10 +2,14 @@
 Mandelbulb
 ==========
 
-This is just an experiment in rendering Mandelbulbs. Initially cross-sections
-but maybe eventually 3D renderings.
+This is just an experiment in rendering White-Nylander Mandelbulbs. Initially
+cross-sections but maybe eventually 3D renderings.
 
 It's also a nice little project on which to try out different language implementations.
+
+For more information about the Mandelbulb and its discovery, see
+
+    http://www.skytopia.com/project/fractal/mandelbulb.html
 
 
 Cross-Section
